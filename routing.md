@@ -271,6 +271,12 @@ HTML 表单没有支持 `PUT`、`PATCH` 或 `DELETE` 动作。所以在从 HTML 
 
 完整的方法列表请参考 [Route facade](http://laravel.com/api/{{version}}/Illuminate/Routing/Router.html) 和 [Route 实例](http://laravel.com/api/{{version}}/Illuminate/Routing/Route.html)
 
+补充：日期2016-12-15  补充人：chenchenFather
+一些常用的路由如：index、create、store、edit.....等等，可以直接使用以下语句创建默认路由
+Route::resource('main','MainController');// 创建链接URL::route('main.index')
+在Controller中增加对应的功能即可在blade中使用
+
+
 ## 译者署名
 | 用户名 | 头像 | 职能 | 签名 |
 |---|---|---|---|
